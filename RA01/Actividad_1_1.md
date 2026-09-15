@@ -169,36 +169,18 @@ explicar algún apartado, pero **no son obligatorios**.
 
 ## 📊 Rúbrica de evaluación
 
-  -----------------------------------------------------------------------
-  Aspecto evaluado                                             Puntuación
-  ------------------------------ ----------------------------------------
-  Identificación de las                                    **2,0 puntos**
-  principales limitaciones de    
-  los dispositivos móviles       
-
-  Explicación de cómo afectan al                           **2,0 puntos**
-  desarrollo y ejecución de      
-  aplicaciones                   
-
-  Buenas prácticas propuestas y                            **2,5 puntos**
-  relación con las limitaciones  
-
-  Ejemplos concretos y adecuados                            **1,0 punto**
-
-  Conclusiones y capacidad de                               **1,0 punto**
-  razonamiento                   
-
-  Organización, claridad y                                  **1,0 punto**
-  presentación                   
-
-  Fuentes utilizadas                                       **0,5 puntos**
-  correctamente indicadas        
-
-  **TOTAL**                                                 **10 puntos**
-  -----------------------------------------------------------------------
+| Aspecto | Puntuación |
+|---|---:|
+| Identificación de las principales limitaciones de los dispositivos móviles | **2,0** |
+| Explicación de cómo afectan al desarrollo y ejecución de aplicaciones | **2,0** |
+| Buenas prácticas propuestas y relación con las limitaciones | **2,5** |
+| Ejemplos concretos y adecuados | **1,0** |
+| Conclusiones y capacidad de razonamiento | **1,0** |
+| Organización, claridad y presentación | **1,0** |
+| Fuentes utilizadas correctamente indicadas | **0,5** |
+| **TOTAL** | **10 puntos** |
 
 ------------------------------------------------------------------------
-
 ## ⚠️ Requisitos para superar la práctica
 
 No bastará con presentar una lista de limitaciones y otra lista
