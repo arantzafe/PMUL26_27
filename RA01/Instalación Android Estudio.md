@@ -8,6 +8,36 @@
 
 ------------------------------------------------------------------------
 
+## Índice
+
+Acceso rápido a cada parte del documento:
+
+- [PARTE I. ANDROID STUDIO](#parte-i-android-studio)
+- [PARTE II. CONFIGURACIÓN DEL SDK](#parte-ii-configuración-del-sdk)
+- [PARTE III. EMULADOR ANDROID](#parte-iii-emulador-android)
+- [PARTE IV. INSTALACIÓN DE GIT](#parte-iv-instalación-de-git)
+- [PARTE V. CONFIGURAR GIT EN ANDROID STUDIO](#parte-v-configurar-git-en-android-studio)
+- [PARTE VI. CUENTA DE GITHUB](#parte-vi-cuenta-de-github)
+- [PARTE VII. CREAR EL REPOSITORIO PMUL](#parte-vii-crear-el-repositorio-pmul)
+- [PARTE VIII. ORGANIZACIÓN LOCAL DE PMUL](#parte-viii-organización-local-de-pmul)
+- [PARTE IX. INICIALIZAR GIT EN PMUL](#parte-ix-inicializar-git-en-pmul)
+- [PARTE X. REVISAR EL PRIMER PROYECTO ANDROID](#parte-x-revisar-el-primer-proyecto-android)
+- [PARTE XI. EJECUTAR LA PRIMERA APP](#parte-xi-ejecutar-la-primera-app)
+- [PARTE XII. `.gitignore`](#parte-xii-gitignore)
+- [PARTE XIII. PRIMER COMMIT](#parte-xiii-primer-commit)
+- [PARTE XIV. SUBIR PMUL A GITHUB](#parte-xiv-subir-pmul-a-github)
+- [PARTE XV. TRABAJAR DESDE ANDROID STUDIO](#parte-xv-trabajar-desde-android-studio)
+- [PARTE XVI. FLUJO DE TRABAJO DIARIO](#parte-xvi-flujo-de-trabajo-diario)
+- [PARTE XVII. MENSAJES DE COMMIT](#parte-xvii-mensajes-de-commit)
+- [PARTE XVIII. INFORMACIÓN QUE NO DEBE SUBIRSE A GITHUB](#parte-xviii-información-que-no-debe-subirse-a-github)
+- [PARTE XIX. NUEVAS PRÁCTICAS](#parte-xix-nuevas-prácticas)
+- [PARTE XX. RESUMEN DE COMANDOS GIT](#parte-xx-resumen-de-comandos-git)
+- [PARTE XXI. CONFIGURACIÓN FINAL RECOMENDADA](#parte-xxi-configuración-final-recomendada)
+- [Checklist final del alumno](#checklist-final-del-alumno)
+- [Flujo que utilizaremos durante el curso](#flujo-que-utilizaremos-durante-el-curso)
+
+------------------------------------------------------------------------
+
 ## 1. Configuración común del aula
 
 Se utilizará, como referencia, la siguiente configuración:
@@ -889,25 +919,86 @@ La plantilla **Empty Activity** está preparada para trabajar con
 
 ## 43. Comprobar los datos del proyecto
 
-La configuración utilizada al crearlo debe ser similar a:
+Si el proyecto `HolaMundo` ya fue creado anteriormente, **no hay que volver a
+crearlo**. Los datos que se introdujeron en el asistente **New Project** se
+pueden comprobar desde el propio proyecto.
 
-**Name**
+### Nombre y ubicación del proyecto
+
+El nombre `HolaMundo` se ve en la parte superior de Android Studio y en el
+panel **Project**, donde aparece la carpeta raíz.
+
+Para comprobar exactamente dónde está guardado el proyecto, se puede situar
+el ratón sobre la carpeta raíz `HolaMundo` en el panel **Project** o utilizar
+el explorador de archivos desde la propia carpeta del proyecto.
+
+Para estas prácticas la ubicación prevista es:
 
 ``` text
-HolaMundo
+C:\DAM\PMUL\HolaMundo
 ```
 
-**Package name**
+### Package name
+
+En el panel **Project**, abrir la parte correspondiente al código fuente.
+Normalmente se verá el paquete con un nombre similar a:
 
 ``` text
 com.nombrealumno.holamundo
 ```
 
-**Save location**
+También se puede comprobar en:
+
+**app → build.gradle.kts**
+
+Buscar:
+
+``` kotlin
+namespace = "com.nombrealumno.holamundo"
+```
+
+y dentro de `defaultConfig`:
+
+``` kotlin
+applicationId = "com.nombrealumno.holamundo"
+```
+
+> La disposición exacta del panel **Project** puede variar ligeramente
+> según la versión de Android Studio y la vista seleccionada.
+
+### Minimum SDK, compileSdk y targetSdk
+
+Abrir:
+
+**app → build.gradle.kts**
+
+Localizar el bloque `android`. Debe contener valores similares a:
+
+``` kotlin
+android {
+    compileSdk = 36
+
+    defaultConfig {
+        applicationId = "com.nombrealumno.holamundo"
+        minSdk = 26
+        targetSdk = 36
+    }
+}
+```
+
+Para las prácticas del módulo comprobaremos:
 
 ``` text
-C:\DAM\PMUL\HolaMundo
+Name: HolaMundo
+Package name: com.nombrealumno.holamundo
+Save location: C:\DAM\PMUL\HolaMundo
+Minimum SDK: API 26
+compileSdk: 36
+targetSdk: 36
 ```
+
+Por tanto, si `HolaMundo` ya estaba creado, basta con **abrirlo y comprobar
+estos valores**. No se debe crear otro proyecto `HolaMundo`.
 
 ------------------------------------------------------------------------
 
