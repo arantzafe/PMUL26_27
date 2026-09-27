@@ -423,6 +423,89 @@ La primera ejecución suele tardar más que las siguientes.
 
 ------------------------------------------------------------------------
 
+
+## Ejecutar `HolaMundo` en el emulador
+
+Una vez iniciado el emulador `Pixel_8_API_36`, volver a la ventana
+principal de Android Studio y comprobar que está abierto el proyecto:
+
+``` text
+HolaMundo
+```
+
+En la barra superior de Android Studio, seleccionar como dispositivo de
+ejecución:
+
+``` text
+Pixel_8_API_36
+```
+
+> **Importante:** iniciar el emulador únicamente pone en marcha el
+> teléfono Android virtual. Ahora debemos instalar y ejecutar dentro de
+> él nuestra aplicación `HolaMundo`.
+
+------------------------------------------------------------------------
+
+## Ejecutar la aplicación
+
+Con `HolaMundo` abierto y `Pixel_8_API_36` seleccionado, pulsar:
+
+**▶ Run**
+
+Android Studio realizará automáticamente estas operaciones:
+
+1. Construirá y compilará el proyecto `HolaMundo`.
+2. Generará la aplicación Android.
+3. Instalará la aplicación en el emulador.
+4. Abrirá `HolaMundo` dentro del teléfono virtual.
+
+La primera ejecución puede tardar algo más porque Gradle puede necesitar
+descargar dependencias.
+
+------------------------------------------------------------------------
+
+## Comprobar el resultado
+
+Cuando termine la compilación, el emulador debe mostrar automáticamente
+la aplicación `HolaMundo`.
+
+La plantilla **Empty Activity** con Jetpack Compose mostrará la interfaz
+inicial generada por Android Studio. El contenido exacto puede variar
+ligeramente según la versión utilizada.
+
+Comprobar:
+
+- [ ] El emulador `Pixel_8_API_36` funciona.
+- [ ] El proyecto `HolaMundo` compila sin errores.
+- [ ] `HolaMundo` se instala en el emulador.
+- [ ] La aplicación se abre y muestra su interfaz.
+
+El proceso completo es:
+
+``` text
+Proyecto HolaMundo
+        ↓
+      ▶ Run
+        ↓
+Android Studio construye la aplicación
+        ↓
+Pixel_8_API_36
+        ↓
+Instala HolaMundo
+        ↓
+Ejecuta HolaMundo
+        ↓
+La aplicación aparece en el emulador
+```
+
+Con esta prueba comprobamos que funcionan correctamente Android Studio,
+el Android SDK, Kotlin, Jetpack Compose, Gradle y el emulador.
+
+A continuación podemos continuar con la instalación y configuración de
+Git y GitHub.
+
+------------------------------------------------------------------------
+
 # PARTE IV. INSTALACIÓN DE GIT
 
 ## 23. Descargar Git
