@@ -235,9 +235,56 @@ Esperar hasta que finalicen todas las descargas.
 
 ## 14. Abrir SDK Manager
 
-En Android Studio ir a:
+Al terminar la instalación, Android Studio puede mostrar únicamente la
+pantalla de bienvenida, con opciones como:
+
+- **Projects**
+- **Customize**
+- **Plugins**
+- **Learn**
+
+En esta pantalla todavía no aparece la barra de menús completa del IDE
+con la opción **Tools → SDK Manager**.
+
+### Opción recomendada para las prácticas: crear primero un proyecto sencillo
+
+1. En la pantalla de bienvenida pulsar **New Project**.
+2. Seleccionar la categoría **Phone and Tablet**.
+3. Elegir la plantilla:
+
+**Empty Activity**
+
+Esta plantilla crea una aplicación Android sencilla preparada para
+trabajar con **Kotlin y Jetpack Compose**.
+
+4. Pulsar **Next**.
+5. Configurar provisionalmente el proyecto, por ejemplo:
+
+```text
+Name: HolaMundo
+Package name: com.nombrealumno.holamundo
+Save location: C:\DAM\PMUL\HolaMundo
+Minimum SDK: API 26
+```
+
+6. Pulsar **Finish**.
+7. Esperar a que Android Studio abra el proyecto y termine la
+sincronización inicial de Gradle.
+
+Una vez abierto el proyecto ya aparecerá la barra de menús completa.
+Entonces abrir:
 
 **Tools → SDK Manager**
+
+> **Nota:** en algunas versiones de Android Studio también puede existir
+> acceso a herramientas del SDK desde la pantalla de bienvenida mediante
+> **More Actions**. Si esa opción no aparece, no es un problema: crear
+> primero el proyecto **Empty Activity** y acceder después desde
+> **Tools → SDK Manager**.
+
+> **Importante:** este proyecto `HolaMundo` será el primer proyecto que
+> utilizaremos en el módulo, por lo que no es necesario crear posteriormente
+> otro proyecto con el mismo nombre.
 
 ------------------------------------------------------------------------
 
@@ -733,29 +780,33 @@ git remote -v
 
 ------------------------------------------------------------------------
 
-# PARTE X. CREAR EL PRIMER PROYECTO ANDROID
+# PARTE X. REVISAR EL PRIMER PROYECTO ANDROID
 
-## 42. Crear un proyecto
+## 42. Abrir o comprobar el proyecto `HolaMundo`
 
-En Android Studio:
+Si se siguieron los pasos de la **Parte II**, el proyecto `HolaMundo`
+ya fue creado para poder acceder a la configuración completa de Android
+Studio.
+
+Comprobar que está abierto. Si se cerró, abrirlo desde la pantalla
+**Projects** de Android Studio.
+
+Solo si todavía no se ha creado, seleccionar:
+
+**New Project → Phone and Tablet → Empty Activity**
+
+o, si ya hay otro proyecto abierto:
 
 **File → New → New Project**
 
-Elegir una plantilla sencilla compatible con:
-
-**Jetpack Compose**
-
-Por ejemplo:
-
-**Empty Activity**
-
-Pulsar **Next**.
+La plantilla **Empty Activity** está preparada para trabajar con
+**Kotlin y Jetpack Compose**.
 
 ------------------------------------------------------------------------
 
-## 43. Datos del proyecto
+## 43. Comprobar los datos del proyecto
 
-Ejemplo:
+La configuración utilizada al crearlo debe ser similar a:
 
 **Name**
 
@@ -779,7 +830,7 @@ C:\DAM\PMUL\HolaMundo
 
 ## 44. Lenguaje
 
-Seleccionar:
+El proyecto debe utilizar:
 
 **Kotlin**
 
@@ -789,7 +840,7 @@ Para los nuevos proyectos del módulo utilizaremos Kotlin.
 
 ## 45. Minimum SDK
 
-Seleccionar:
+Comprobar que se ha seleccionado:
 
 **API 26: Android 8.0 (Oreo)**
 
@@ -812,14 +863,13 @@ targetSdk = 36
 
 ------------------------------------------------------------------------
 
-## 46. Crear el proyecto
+## 46. Esperar a la configuración del proyecto
 
-Pulsar:
+Si el proyecto acaba de crearse, esperar a que Android Studio termine
+la sincronización de Gradle y descargue las dependencias necesarias.
 
-**Finish**
-
-Esperar a que Android Studio termine la sincronización de Gradle y
-descargue las dependencias necesarias.
+Cuando finalice, el proyecto estará preparado para continuar con la
+configuración del emulador y ejecutar la primera aplicación.
 
 ------------------------------------------------------------------------
 
@@ -1309,4 +1359,3 @@ GitHub (PMUL)
 
 **Regla de trabajo:** antes de empezar, `pull`; después de realizar
 cambios coherentes, `commit`; al finalizar la sesión, `push`.
-
